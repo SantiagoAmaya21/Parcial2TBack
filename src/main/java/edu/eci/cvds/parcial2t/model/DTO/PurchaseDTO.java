@@ -17,7 +17,7 @@ import java.util.List;
 @Getter
 public class PurchaseDTO {
     private String userId;
-    private List<Product> products;
+    private List<ProductDTO> products;
     private double totalAmount;
     private Status status;
     private String transactionId;

@@ -17,6 +17,6 @@ import java.time.LocalDate;
 public class Transaction {
     private String transactionId;
     private double totalAmount;
+    private Status status;
     private String responseMessage;
-    private LocalDate purchaseDate;
 }

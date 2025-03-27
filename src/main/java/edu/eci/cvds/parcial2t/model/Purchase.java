@@ -1,22 +1,21 @@
 package edu.eci.cvds.parcial2t.model;
 
 import edu.eci.cvds.parcial2t.model.DTO.PurchaseDTO;
-import edu.eci.cvds.parcial2t.model.DTO.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.io.Serializable;
 import java.util.stream.Collectors;
 import java.util.List;
 import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Setter
 @Getter
 @Document(collection = "Purchases")
-public class Purchase {
+public class Purchase implements Serializable {
     @Id
     private String id;
     private String userId;
